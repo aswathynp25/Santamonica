@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+     
+        
+         <listener class-name="StudyAbroad.listeners"/>
+          <listener class-name="resources.ExtentReporterNG"/>
+
+ </listeners>
+  
+  <test name="Education ">
+    <classes>
+      <class name="StudyAbroad.Education"/>
+          </classes>
+      </test>
+      
+      
+      
+      <test name="Specialization">
+    <classes>
+      <class name="StudyAbroad.Specialization"/>
+          </classes>
+      </test>
+      
+      <test name="specializationcomponent">
+    <classes>
+      <class name="StudyAbroad.specializationcomponent"/>
+          </classes>
+      </test>
+      
+      <test name="Branch">
+    <classes>
+      <class name="StudyAbroad.Branch"/>
+          </classes>
+      </test>
+ 
+    <test name="Validating title in the Page">
+         <classes>
+      <class name="StudyAbroad.validatetitle"/>
+       </classes>
+      </test>
+       <test name="App Testing">
+         <classes>
+      <class name="StudyAbroad.AppTest"/>
+       </classes>
+      </test>
+            
+   <!-- Test -->
+</suite> <!-- Suite -->
+

@@ -1,0 +1,8 @@
+18:35:28.395 [main] INFO  resources.base - Clicking on Academic
+18:35:30.599 [main] INFO  resources.base - Clicking on Education
+18:35:33.444 [main] INFO  resources.base - Clicking on Edit Education button
+18:36:14.517 [main] INFO  resources.base - Driver is initialized
+18:36:34.410 [main] INFO  resources.base - Navigated to validateEducation page
+18:36:42.600 [main] INFO  resources.base - LoggedIn successfully
+18:36:44.773 [main] INFO  resources.base - Clicking on Setup
+18:36:46.902 [main] INFO  resources.base - Clicking on Academic
