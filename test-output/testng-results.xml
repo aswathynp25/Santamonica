@@ -1,29 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="12" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="86046" started-at="2019-01-02T10:37:14Z" finished-at="2019-01-02T10:38:40Z">
+  <suite name="Default suite" duration-ms="136274" started-at="2019-01-02T11:27:17Z" finished-at="2019-01-02T11:29:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="86046" started-at="2019-01-02T10:37:14Z" finished-at="2019-01-02T10:38:40Z">
-      <class name="StudyAbroad.Specialization">
-        <test-method status="PASS" signature="initialize()[pri:0, instance:StudyAbroad.Specialization@68e965f5]" name="initialize" is-config="true" duration-ms="45407" started-at="2019-01-02T10:37:14Z" finished-at="2019-01-02T10:38:00Z">
+    <test name="Default test" duration-ms="136274" started-at="2019-01-02T11:27:17Z" finished-at="2019-01-02T11:29:33Z">
+      <class name="StudyAbroad.Branch">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:StudyAbroad.Branch@6c779568]" name="initialize" is-config="true" duration-ms="33184" started-at="2019-01-02T11:27:17Z" finished-at="2019-01-02T11:27:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="CreateSpecialization()[pri:1, instance:StudyAbroad.Specialization@68e965f5]" name="CreateSpecialization" duration-ms="29825" started-at="2019-01-02T10:38:00Z" finished-at="2019-01-02T10:38:30Z">
+        <test-method status="PASS" signature="CreateBranch()[pri:1, instance:StudyAbroad.Branch@6c779568]" name="CreateBranch" duration-ms="39866" started-at="2019-01-02T11:27:50Z" finished-at="2019-01-02T11:28:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CreateSpecialization -->
-        <test-method status="PASS" signature="EditSpecialization()[pri:2, instance:StudyAbroad.Specialization@68e965f5]" name="EditSpecialization" duration-ms="8535" started-at="2019-01-02T10:38:30Z" finished-at="2019-01-02T10:38:38Z">
+        </test-method> <!-- CreateBranch -->
+        <test-method status="PASS" signature="EditBranch()[pri:2, instance:StudyAbroad.Branch@6c779568]" name="EditBranch" duration-ms="10326" started-at="2019-01-02T11:28:30Z" finished-at="2019-01-02T11:28:40Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EditSpecialization -->
-        <test-method status="PASS" signature="DeleteSpecialzation()[pri:3, instance:StudyAbroad.Specialization@68e965f5]" name="DeleteSpecialzation" duration-ms="2167" started-at="2019-01-02T10:38:38Z" finished-at="2019-01-02T10:38:40Z">
+        </test-method> <!-- EditBranch -->
+        <test-method status="PASS" signature="ViewBranch()[pri:3, instance:StudyAbroad.Branch@6c779568]" name="ViewBranch" duration-ms="3263" started-at="2019-01-02T11:28:40Z" finished-at="2019-01-02T11:28:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DeleteSpecialzation -->
-      </class> <!-- StudyAbroad.Specialization -->
+        </test-method> <!-- ViewBranch -->
+        <test-method status="PASS" signature="CreateBranchPhonenumber()[pri:4, instance:StudyAbroad.Branch@6c779568]" name="CreateBranchPhonenumber" duration-ms="6803" started-at="2019-01-02T11:28:43Z" finished-at="2019-01-02T11:28:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateBranchPhonenumber -->
+        <test-method status="PASS" signature="EditBranchPhonenumber()[pri:5, instance:StudyAbroad.Branch@6c779568]" name="EditBranchPhonenumber" duration-ms="9011" started-at="2019-01-02T11:28:50Z" finished-at="2019-01-02T11:28:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditBranchPhonenumber -->
+        <test-method status="PASS" signature="DeleteBranchPhonenumber()[pri:6, instance:StudyAbroad.Branch@6c779568]" name="DeleteBranchPhonenumber" duration-ms="3377" started-at="2019-01-02T11:28:59Z" finished-at="2019-01-02T11:29:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteBranchPhonenumber -->
+        <test-method status="PASS" signature="CreateBranchEmailId()[pri:7, instance:StudyAbroad.Branch@6c779568]" name="CreateBranchEmailId" duration-ms="6818" started-at="2019-01-02T11:29:03Z" finished-at="2019-01-02T11:29:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateBranchEmailId -->
+        <test-method status="PASS" signature="EditBranchEmailId()[pri:8, instance:StudyAbroad.Branch@6c779568]" name="EditBranchEmailId" duration-ms="9017" started-at="2019-01-02T11:29:09Z" finished-at="2019-01-02T11:29:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditBranchEmailId -->
+        <test-method status="PASS" signature="DeleteBranchEmailId()[pri:9, instance:StudyAbroad.Branch@6c779568]" name="DeleteBranchEmailId" duration-ms="3348" started-at="2019-01-02T11:29:18Z" finished-at="2019-01-02T11:29:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteBranchEmailId -->
+        <test-method status="PASS" signature="DeleteBranch()[pri:10, instance:StudyAbroad.Branch@6c779568]" name="DeleteBranch" duration-ms="5146" started-at="2019-01-02T11:29:22Z" finished-at="2019-01-02T11:29:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteBranch -->
+        <test-method status="PASS" signature="AssignBranchIncharge()[pri:11, instance:StudyAbroad.Branch@6c779568]" name="AssignBranchIncharge" duration-ms="4572" started-at="2019-01-02T11:29:27Z" finished-at="2019-01-02T11:29:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AssignBranchIncharge -->
+        <test-method status="PASS" signature="DeleteBranchIncharge()[pri:12, instance:StudyAbroad.Branch@6c779568]" name="DeleteBranchIncharge" duration-ms="1139" started-at="2019-01-02T11:29:31Z" finished-at="2019-01-02T11:29:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteBranchIncharge -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:StudyAbroad.Branch@6c779568]" name="teardown" is-config="true" duration-ms="339" started-at="2019-01-02T11:29:33Z" finished-at="2019-01-02T11:29:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- StudyAbroad.Branch -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

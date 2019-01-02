@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.Menu;
@@ -40,61 +41,70 @@ public class Specialization extends base{
 		{
        SpecializationPage sp=new SpecializationPage(driver);
        sp.getSpecializationNew().click();
-       Thread.sleep(2000);
+       Thread.sleep(1000);
        sp.getSpecializationedudropdown().click();
-       Thread.sleep(2000);
+       Thread.sleep(1000);
        sp.getSpecializationeduselect().click();
-       Thread.sleep(2000);
+       Thread.sleep(1000);
        
        sp.getSpecializationcoursedropdown().click();
-       Thread.sleep(2000);
+       Thread.sleep(1000);
        sp.getSpecializationcourseselect().click();
-       Thread.sleep(2000);
+       Thread.sleep(1000);
        
        sp.getEnteringSpecializationName().sendKeys("Automobile Engineering");
-       Thread.sleep(2000);
+       Thread.sleep(1000);
        
        sp.getSpecValidfrom().click();
-       Thread.sleep(2000);
+       Thread.sleep(1000);
        sp.getSpecValidfromselect().click();
-       Thread.sleep(2000);
+       Thread.sleep(1000);
        
        sp.getSpeciValidityMonths().sendKeys("48");
-       Thread.sleep(2000);
+       Thread.sleep(1000);
        
        sp.getSpeciCalculationtype().click();
-       Thread.sleep(2000);
+       Thread.sleep(1000);
        sp.getSpeciCalculationtypeselect().click();
-       Thread.sleep(2000);
+       Thread.sleep(1000);
        
        sp.getSpecResulttype().click();
-       Thread.sleep(2000);
+       Thread.sleep(1000);
        
        sp.getSpecResulttypeSelect().click();
-       Thread.sleep(2000);
+       Thread.sleep(1000);
        
        sp.getClickCreateSpecialization().click();
-       Thread.sleep(2000);
+       Thread.sleep(1000);
        
 }
 	@Test(priority=2,enabled=true)
 	public void EditSpecialization() throws InterruptedException {
 		SpecializationPage sp=new SpecializationPage(driver);	
 		sp.getEditSpecialization().click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		sp.getEditSpecializationName().clear();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		sp.getEditSpecializationName().sendKeys("Aeronautical Engineering");
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		sp.getUpdateSpecialization().click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 	}
 	
 	@Test(priority=3,enabled=true)
 	public void DeleteSpecialzation() throws InterruptedException {
 		SpecializationPage sp=new SpecializationPage(driver);	
 		sp.getDeleteSpecialization().click();	
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		driver.switchTo().alert().accept();
+	}
+	
+	@AfterTest
+	public void teardown()
+	{
+		
+		driver.close();
+		driver=null;
+		
 	}
 	}

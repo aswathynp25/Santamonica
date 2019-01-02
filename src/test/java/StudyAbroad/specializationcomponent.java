@@ -89,12 +89,12 @@ public class specializationcomponent extends base{
 		driver.switchTo().alert().accept();
 	}
 	
-//	@AfterTest
-//	public void teardown()
-//	{
-//		
-//		driver.close();
-//		driver=null;
-//		
-//	}
+	@AfterTest
+	public void teardown()
+	{
+		
+		driver.close();
+		driver=null;
+		
+	}
 }

@@ -3,14 +3,23 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="StudyAbroad.Specialization">
+      <class name="StudyAbroad.Branch">
         <methods>
-          <include name="EditSpecialization"/>
-          <include name="DeleteSpecialzation"/>
+          <include name="CreateBranchEmailId"/>
+          <include name="CreateBranchPhonenumber"/>
+          <include name="EditBranch"/>
+          <include name="EditBranchEmailId"/>
+          <include name="ViewBranch"/>
+          <include name="DeleteBranchPhonenumber"/>
+          <include name="EditBranchPhonenumber"/>
           <include name="initialize"/>
-          <include name="CreateSpecialization"/>
+          <include name="DeleteBranchEmailId"/>
+          <include name="DeleteBranchIncharge"/>
+          <include name="DeleteBranch"/>
+          <include name="AssignBranchIncharge"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- StudyAbroad.Specialization -->
+      </class> <!-- StudyAbroad.Branch -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
