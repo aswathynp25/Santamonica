@@ -102,16 +102,5 @@ public WebDriver driver;
 		return driver.findElement(DeleteSpecializationcomponent);
 	}
 	
-	
-	
-	@AfterTest
-	public void teardown()
-	{
-		
-		driver.close();
-		driver=null;
-		
-	}
-	
 
 }

@@ -134,14 +134,4 @@ public WebDriver driver;
 		return driver.findElement(DeleteSpecialization);
 	}
 	
-	@AfterTest
-	public void teardown()
-	{
-		
-		driver.close();
-		driver=null;
-		
 	}
-	
-
-}
