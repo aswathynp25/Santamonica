@@ -31,7 +31,9 @@ public class base {
 	
 	if(browserName.equals("chrome"))
 	{
-		 System.setProperty("webdriver.chrome.driver", "C:\\Users\\Aswathy\\Downloads\\Znew\\chromedriver.exe");
+//		System.out.println(System.getProperty("user.dir"));
+//		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\driver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Aswathy\\Downloads\\Znew\\chromedriver.exe");
 		driver= new ChromeDriver();
 			
 		
@@ -39,13 +41,17 @@ public class base {
 	//execute in firefox code
 	else if (browserName.equals("firefox"))
 	{
+		System.out.println(System.getProperty("user.dir"));
+		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\driver\\geckodriver.exe");
 		 driver= new FirefoxDriver();
 		
 	}
 	
 	else if (browserName.equals("IE"))
 	{
-		System.setProperty("webdriver.ie.driver","C:\\Users\\Aswathy\\Downloads\\Znew\\IEDriverServer.exe");
+		System.out.println(System.getProperty("user.dir"));
+		System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"\\driver\\IEDriverServer.exe");
+		//System.setProperty("webdriver.ie.driver","C:\\Users\\Aswathy\\Downloads\\Znew\\IEDriverServer.exe");
 		 driver=new InternetExplorerDriver();
 	}
 	

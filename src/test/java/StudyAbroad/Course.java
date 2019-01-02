@@ -54,7 +54,7 @@ public class Course extends base{
        Thread.sleep(2000);
        cp.getClickoncourse().click();
        Thread.sleep(2000);
-//       
+//     ................................................................................................................  
 //       WebElement msg1=cp.getCoursecreatedsuccessmsg();
 //	   String text1=msg1.getText();
 //	    System.out.println(text1);

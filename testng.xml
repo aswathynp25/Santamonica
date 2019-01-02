@@ -9,14 +9,7 @@
 
  </listeners>
   
-  <test name="Education ">
-    <classes>
-      <class name="StudyAbroad.Education"/>
-          </classes>
-      </test>
-      
-      
-      
+        
       <test name="Specialization">
     <classes>
       <class name="StudyAbroad.Specialization"/>
@@ -35,11 +28,6 @@
           </classes>
       </test>
  
-    <test name="Validating title in the Page">
-         <classes>
-      <class name="StudyAbroad.validatetitle"/>
-       </classes>
-      </test>
        <test name="App Testing">
          <classes>
       <class name="StudyAbroad.AppTest"/>

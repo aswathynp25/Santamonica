@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="StudyAbroad.specializationcomponent">
+      <class name="StudyAbroad.Specialization">
         <methods>
-          <include name="Deletespecializationcomponent"/>
+          <include name="EditSpecialization"/>
+          <include name="DeleteSpecialzation"/>
           <include name="initialize"/>
-          <include name="Editspecializationcomponent"/>
+          <include name="CreateSpecialization"/>
         </methods>
-      </class> <!-- StudyAbroad.specializationcomponent -->
+      </class> <!-- StudyAbroad.Specialization -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
