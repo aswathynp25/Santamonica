@@ -1,0 +1,8 @@
+11:19:21.164 [main] INFO  resources.base - Driver is initialized
+11:19:26.231 [main] INFO  resources.base - Navigated to validateEducation page
+11:19:34.929 [main] INFO  resources.base - LoggedIn successfully
+11:19:39.930 [main] INFO  resources.base - Clicking on Setup
+11:21:51.624 [main] INFO  resources.base - Driver is initialized
+11:21:55.817 [main] INFO  resources.base - Navigated to validateEducation page
+11:22:04.738 [main] INFO  resources.base - LoggedIn successfully
+11:22:09.739 [main] INFO  resources.base - Clicking on Setup

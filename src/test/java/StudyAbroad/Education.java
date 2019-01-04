@@ -29,22 +29,22 @@ public void initialize() throws IOException, InterruptedException
 	 log.info("Navigated to validateEducation page");
 	 longinTest();
 		log.info("LoggedIn successfully");
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		
 	    Menu mn=new Menu(driver);
 	    log.info("Clicking on Setup");
 	    mn.getSetup().click();
-	    Thread.sleep(2000);
+	    Thread.sleep(500);
 	    
 	    log.info("Clicking on Academic");
 	    mn.getAcademic().click();
-	    Thread.sleep(2000);
-	    
+	    Thread.sleep(500);   
 	   EducationPage ed=new EducationPage(driver);
 	   log.info("Clicking on Education");
 	   ed.getEducation().click();
-	  Thread.sleep(2000);
+	  Thread.sleep(500);
 }
+//Creating the Education
 
 @Test(priority = 1, enabled=true)
 	public void CreateEducation() throws IOException, InterruptedException
@@ -52,38 +52,39 @@ public void initialize() throws IOException, InterruptedException
 	EducationPage ed=new EducationPage(driver);
     log.info("Clicking on Education new");
    ed.getnewEducation().click();
-   Thread.sleep(2000);
+   Thread.sleep(500);
    
    log.info("Entering the education");
-   ed.getEducationtxt1().sendKeys("Testing 1");
-   Thread.sleep(2000);
+   ed.getEducationtxt1().sendKeys("Dual Degree");
+   Thread.sleep(500);
    ed.getEducationprof1().click();;
-   Thread.sleep(2000);
+   Thread.sleep(500);
    ed.getEducationadd1().click();;
+   Thread.sleep(500);
+   ed.getEducationtxt2().sendKeys("Research");
    Thread.sleep(2000);
-   ed.getEducationtxt2().sendKeys("Testing 2");
-   Thread.sleep(2000);
-   ed.getEducationadd2().click();
-   Thread.sleep(2000);
-   ed.getEducationtxt3().sendKeys("Testing 3");
-   Thread.sleep(2000);
+    WebElement element=driver.findElement(By.xpath("//a[@id='create_education']"));
+   ((JavascriptExecutor)driver).executeScript("arguments[0].click();", element);
+	Thread.sleep(3000);
+   ed.getEducationdelete3().click();
+   Thread.sleep(500);
    log.info("Clicking on createEducationbutton");
-   ed.getClickcreateeducation().click();
-  Thread.sleep(2000);
- log.info("Successfully created education");		
-		 WebElement msg1=ed.getEduCreatedSuccessfulmg();
-		   String text1=msg1.getText();
-		    System.out.println(text1);
-		    Thread.sleep(2000);
-		String expectedText1 = "Education created successfully";
-	    assertEquals(text1,expectedText1);
-	    log.info("Education created Successfully , toaster message is shown");
-		Thread.sleep(2000);	 
+    ed.getClickcreateeducation().click();
+    Thread.sleep(500);
+    log.info("Successfully created education");		
+    WebElement msg1=ed.getEduCreatedSuccessfulmg();
+	String text1=msg1.getText();
+	System.out.println(text1);
+	Thread.sleep(500);
+	String expectedText1 = "Education created successfully";
+	assertEquals(text1,expectedText1);
+	log.info("Education created Successfully , toaster message is shown");
+	Thread.sleep(500);	 
 		
 		
 }
 
-@Test(priority = 2, enabled=true)
+@Test(priority = 2, enabled=false)
 public void editeducation() throws InterruptedException {
 	 EducationPage ed=new EducationPage(driver);
 	 log.info("Clicking on Edit Education button");
@@ -133,13 +134,13 @@ public void deleteeducation() throws InterruptedException {
 	Thread.sleep(2000);
 	}
 
-//@AfterTest
-//public void teardown()
-//{
-//	
-//	driver.close();
-//	driver=null;
+@AfterTest
+public void teardown()
+{
 	
-//}
+driver.close();
+driver=null;
+	
+}
 }
 

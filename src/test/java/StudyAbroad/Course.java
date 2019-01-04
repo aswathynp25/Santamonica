@@ -6,6 +6,8 @@ import java.io.IOException;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.BeforeTest;
@@ -27,33 +29,52 @@ public class Course extends base{
 		 log.info("Navigated to validateEducation page");
 		 longinTest();
 		 log.info("LoggedIn successfully");
-		 Thread.sleep(2000);
+		 Thread.sleep(5000);
 			
 		 Menu mn=new Menu(driver);
 		 log.info("Clicking on Setup");
 		 mn.getSetup().click();
-		 Thread.sleep(2000);
+		 Thread.sleep(500);
 		 mn.getAcademic().click();
-		 Thread.sleep(2000);
+		 Thread.sleep(500);
 	     CoursePage cp=new CoursePage(driver);
 	     cp.getCourseLink().click();
-	     Thread.sleep(2000);
+	     Thread.sleep(500);
 	}
 	@Test(priority = 1, enabled=true)	
 		public void CreateCourse() throws IOException, InterruptedException
 	   {
        CoursePage cp=new CoursePage(driver);
        cp.getCourseNew().click();
-       Thread.sleep(2000);
-       Select s=new Select(cp.getSelectedudropdown());
-       s.selectByValue("1");
-       Thread.sleep(2000);
-       cp.getEnteringCourseName().sendKeys("Testing1");
-       Thread.sleep(2000);
-       cp.getProficiency().click();
-       Thread.sleep(2000);
-       cp.getClickoncourse().click();
-       Thread.sleep(2000);
+       Thread.sleep(500);
+       cp.getSelectedudropdown1().click();
+       Thread.sleep(500);
+       cp.getSelectedu1().click();
+       Thread.sleep(500);
+       cp.getEnteringCourseName1().sendKeys("Hotel Management");
+       Thread.sleep(500);
+       cp.getCourseAdd1().click();
+       Thread.sleep(500);
+       cp.getSelectedudropdown2().click();
+       Thread.sleep(500);
+       cp.getSelectedu2().click();
+       Thread.sleep(500);
+       cp.getEnteringCourseName2().sendKeys("Architecture");
+       Thread.sleep(500);
+       WebElement element=driver.findElement(By.xpath("//a[@id='create_course']"));
+       ((JavascriptExecutor)driver).executeScript("arguments[0].click();", element);
+    	Thread.sleep(3000);
+       cp.getCourseNewDelete3().click();
+       Thread.sleep(100);
+       cp.getCourseCreateButton().click();
+       Thread.sleep(500);
+       
+       
+       
+       
+       
+       
+       
 //     ................................................................................................................  
 //       WebElement msg1=cp.getCoursecreatedsuccessmsg();
 //	   String text1=msg1.getText();

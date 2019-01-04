@@ -1,5 +1,8 @@
-18:25:16.649 [main] INFO  resources.base - LoggedIn successfully
-18:25:21.694 [main] INFO  resources.base - Clicking on Setup
-18:25:51.647 [main] INFO  resources.base - Driver is initialized
-18:25:57.661 [main] INFO  resources.base - Navigated to validateEducation page
-18:26:06.910 [main] INFO  resources.base - LoggedIn successfully
+11:24:05.360 [main] INFO  resources.base - Driver is initialized
+11:24:09.544 [main] INFO  resources.base - Navigated to validateEducation page
+11:24:18.461 [main] INFO  resources.base - LoggedIn successfully
+11:24:23.464 [main] INFO  resources.base - Clicking on Setup
+11:25:32.857 [main] INFO  resources.base - Driver is initialized
+11:25:36.813 [main] INFO  resources.base - Navigated to validateEducation page
+11:25:49.983 [main] INFO  resources.base - LoggedIn successfully
+11:25:55.012 [main] INFO  resources.base - Clicking on Setup

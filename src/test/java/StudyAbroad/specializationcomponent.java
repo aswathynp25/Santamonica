@@ -31,13 +31,13 @@ public class specializationcomponent extends base{
 		    Menu mn=new Menu(driver);
 		    log.info("Clicking on Setup");
 		    mn.getSetup().click();
-		    Thread.sleep(1000);
+		    Thread.sleep(500);
 		    mn.getAcademic().click();
-		    Thread.sleep(1000);
+		    Thread.sleep(500);
 	       SpecializationComponentPage spc=new SpecializationComponentPage(driver);
 	       
 	       spc.getSpecializationComponentLink().click();
-	       Thread.sleep(1000);
+	       Thread.sleep(500);
         }
 	
 	@Test(priority = 1, enabled=true)
@@ -45,23 +45,23 @@ public class specializationcomponent extends base{
 		{
        SpecializationComponentPage spc=new SpecializationComponentPage(driver);
        spc.getNewSpecializationComponent().click();
-       Thread.sleep(1000);
+       Thread.sleep(500);
        spc.getSpecComponentedudropdown().click();
-       Thread.sleep(1000);
+       Thread.sleep(500);
        spc.getSpecComponenteduselect().click();
-       Thread.sleep(1000);
+       Thread.sleep(500);
        spc.getSpecComponentcoursedropdown().click();
-       Thread.sleep(1000);
+       Thread.sleep(500);
        spc.getSpecComponentcourseselect().click();
-       Thread.sleep(1000);
+       Thread.sleep(500);
        spc.getSpecComponentSpecidropdown().click();
-       Thread.sleep(1000);
+       Thread.sleep(500);
        spc.getSpecComponentSpeciselect().click();
-       Thread.sleep(1000);
+       Thread.sleep(500);
        spc.getEnteringSpecializationComponentName().sendKeys("Reading");
-       Thread.sleep(1000);
+       Thread.sleep(500);
        spc.getCreateSpecializationcomponent().click();
-       Thread.sleep(2000);
+       Thread.sleep(500);
        
 }
 	
@@ -70,13 +70,13 @@ public class specializationcomponent extends base{
 	{
    SpecializationComponentPage spc=new SpecializationComponentPage(driver);
    spc.getEditSpecializationComponent().click();
-   Thread.sleep(1000);
+   Thread.sleep(500);
    spc.getEditingSpecializationComponentName().clear();
-   Thread.sleep(1000);
+   Thread.sleep(500);
    spc.getEditingSpecializationComponentName().sendKeys("Listening");
-   Thread.sleep(1000);
+   Thread.sleep(500);
    spc.getSpecializationcomponentUpdateButton().click();
-   Thread.sleep(1000);
+   Thread.sleep(500);
    
    }
 	
@@ -85,7 +85,7 @@ public class specializationcomponent extends base{
 	{
 		SpecializationComponentPage spc=new SpecializationComponentPage(driver);
 		spc.getDeleteSpecializationcomponent().click();
-		Thread.sleep(1000);
+		Thread.sleep(500);
 		driver.switchTo().alert().accept();
 	}
 	
